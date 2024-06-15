@@ -11,7 +11,11 @@ const path=require("path");
 const cors=require("cors");
 
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://fontened-blogwebsite.vercel.app/', // Replace with your actual Vercel domain
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true
+}));
 dotenv.config();
 app.use(express.json());
 app.use("/images",express.static(path.join(__dirname,"/images")));
