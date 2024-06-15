@@ -12,7 +12,7 @@ const cors=require("cors");
 
 
 app.use(cors({
-    origin: 'https://fontened-blogwebsite.vercel.app/', // Replace with your actual Vercel domain
+    origin: 'https://fontened-blogwebsite.vercel.app', // Replace with your actual Vercel domain
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true
 }));
