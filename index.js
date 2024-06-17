@@ -12,7 +12,11 @@ const cors=require("cors");
 
 
 app.use(cors({
+<<<<<<< HEAD
     origin: 'https://project-orcin-three.vercel.app/', 
+=======
+    origin: 'https://fontened-blogwebsite.vercel.app', // Replace with your actual Vercel domain
+>>>>>>> c6cc750b803a6eae399b73edc1c7cda13ab7cc4a
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true
 }));
