@@ -12,8 +12,7 @@ const cors=require("cors");
 const morgan=require("morgan");
 
 app.use(cors({
-    origin: 'https://project-tan-seven-19.vercel.app', 
-    credentials: true
+    origin: 'https://project-tan-seven-19.vercel.app'
 }));
 dotenv.config();
 app.use(express.json());
